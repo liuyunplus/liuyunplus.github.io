@@ -117,7 +117,7 @@ blockquote p {
   padding: 10px 10px 10px 10px;
   margin: 20px 0px;
   border-radius: 5px;
-  box-shadow: 0 1px 2px rgba(151, 151, 151, 0.58);
+  box-shadow: 0 1px 2px rgb(151 151 2.60344828%);
 }
 .home-main .post-list .post-list-item .post-title {
   font-size: 22px;
@@ -158,4 +158,24 @@ blockquote p {
 .about-main {
   width: 900px;
   margin: 0 auto;
+}
+.archive-main {
+  width: 900px;
+  margin: 20px auto;
+}
+.archive-main a {
+  color: #212121;
+}
+.archive-main a:hover {
+  color: #666666;
+}
+.category-main {
+  width: 900px;
+  margin: 20px auto;
+}
+.category-main a {
+  color: #212121;
+}
+.category-main a:hover {
+  color: #666666;
 }
