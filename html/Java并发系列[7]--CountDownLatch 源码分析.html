@@ -19,17 +19,19 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
   </head>
   <body>
-    <div class="site-header">
-      <span class="site-header-left">
-        <span class="site-title"><a href="https://liuyunplus.github.io/index.html">我的博客</a></span>
-      </span>
-      <span class="site-header-right">
-        <span class="site-home"><a href="https://liuyunplus.github.io/index.html">首页</a></span>
-        <span class="site-archive"><a href="https://liuyunplus.github.io/html/archive.html">归档</a></span>
-        <span class="site-category"><a href="https://liuyunplus.github.io/html/category.html">分类</a></span>
-        <span class="site-about"><a href="https://liuyunplus.github.io/html/about.html">关于</a></span>
-      </span>
-    </div>    <div class="post-main">
+    <header>
+      <div class="header-main">
+        <div class="header-left">
+          <a href="https://liuyunplus.github.io/index.html">我的博客</a>
+        </div>
+        <div class="header-right">
+          <a href="https://liuyunplus.github.io/index.html">首页</a>
+          <a href="https://liuyunplus.github.io/html/archive.html">归档</a>
+          <a href="https://liuyunplus.github.io/html/category.html">分类</a>
+          <a href="https://liuyunplus.github.io/html/about.html">关于</a>
+        </div>
+      </div>
+    </header>    <div class="post-main">
       <div class="post-header">
         <h2 class="post-title">Java并发系列[7]--CountDownLatch 源码分析</h2>
         <p class="post-date">发布日期: 2018-04-01</p>
@@ -159,7 +161,9 @@ public final boolean releaseShared(int arg) {
 
       </div>
     </div>
-  </body>
+    <footer>
+      Powered By LiuYun
+    </footer>  </body>
   <script>
 	//在table外层包装一个div，如果table超长则显示横向滚动条
     [].slice.call(document.querySelectorAll("table")).forEach(function (el) {

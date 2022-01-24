@@ -78,34 +78,44 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
-.site-header {
+header {
   width: 100%;
   height: 65px;
   line-height: 65px;
-  /* 实现单行文本垂直居中 */
-  margin: 0 auto;
-  background-color: #30475E;
+  background-color: #525252;
 }
-.site-header .site-header-left {
-  width: 100px;
-  font-size: 24px;
-  font-weight: 600;
+header .header-main {
+  width: 900px;
   color: white;
-  float: left;
-  margin-left: 20px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
 }
-.site-header .site-header-right {
-  width: 200px;
-  color: white;
+header .header-main .header-left {
+  font-size: 26px;
+}
+header .header-main .header-right {
+  font-size: 18px;
   text-align: right;
-  float: right;
-  margin-right: 20px;
 }
-.site-header a {
-  color: white;
+header .header-main a {
+  color: #fff;
+  cursor: pointer;
+}
+header .header-main a:hover {
+  text-decoration: underline;
+}
+footer {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  color: gray;
+  background-color: #dadada;
 }
 .home-main {
   width: 900px;
+  min-height: calc(100vh - 65px - 40px);
   margin: 0 auto;
 }
 .home-main .post-list {
@@ -114,7 +124,7 @@ blockquote p {
 }
 .home-main .post-list .post-list-item {
   background-color: white;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   margin: 20px 0px;
   border-radius: 5px;
   box-shadow: 0 1px 2px rgb(151 151 2.60344828%);
@@ -127,7 +137,7 @@ blockquote p {
   color: #212121;
 }
 .home-main .post-list .post-list-item .post-title a:hover {
-  color: #666666;
+  text-decoration: underline;
 }
 .home-main .post-list .post-list-item .post-meta {
   font-size: 15px;
@@ -136,13 +146,17 @@ blockquote p {
   margin-bottom: 10px;
 }
 .home-main .post-list .post-list-item .post-content a {
-  color: blue;
+  color: gray;
+}
+.home-main .post-list .post-list-item .post-content a:hover {
+  text-decoration: underline;
 }
 .home-main .post-list .post-list-item img {
   margin-top: 5px;
 }
 .post-main {
   width: 900px;
+  min-height: calc(100vh - 65px - 40px);
   margin: 0 auto;
 }
 .post-main .post-header {
@@ -155,27 +169,66 @@ blockquote p {
 .post-main img {
   width: 100%;
 }
-.about-main {
-  width: 900px;
-  margin: 0 auto;
-}
 .archive-main {
   width: 650px;
-  margin: 20px auto;
+  min-height: calc(100vh - 65px - 40px - 20px);
+  margin: 10px auto;
+}
+.archive-main .issue {
+  padding: 14px 0px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom-style: solid;
+  border-bottom-color: #e0e4e8;
+  border-bottom-width: 1px;
+}
+.archive-main .issue .issue-date {
+  margin-right: 25px;
+  color: #6f7379;
+}
+.archive-main .issue:last-child {
+  border-bottom: none;
 }
 .archive-main a {
-  color: #212121;
+  text-decoration: none;
+  color: #b5495b;
+  cursor: pointer;
 }
 .archive-main a:hover {
-  color: #666666;
+  font-weight: 600;
+  color: #b5495b;
+  text-decoration: underline;
 }
 .category-main {
   width: 650px;
-  margin: 20px auto;
+  min-height: calc(100vh - 65px - 40px - 20px);
+  margin: 10px auto;
+}
+.category-main .category-name,
+.category-main .category-post {
+  padding: 14px 0px;
+  border-bottom-style: solid;
+  border-bottom-color: #e0e4e8;
+  border-bottom-width: 1px;
+}
+.category-main .category-name:last-child,
+.category-main .category-post:last-child {
+  border-bottom: none;
 }
 .category-main a {
-  color: #212121;
+  text-decoration: none;
+  color: #b5495b;
+  cursor: pointer;
 }
 .category-main a:hover {
-  color: #666666;
+  font-weight: 600;
+  color: #b5495b;
+  text-decoration: underline;
+}
+.about-main {
+  width: 900px;
+  min-height: calc(100vh - 65px - 40px);
+  margin: 0 auto;
 }
